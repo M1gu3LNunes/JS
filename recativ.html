@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1 Me diz o quanto de dinheiro que ce tem ai mano, que vou te fala quantos litros de combustivel você pode comprar, e quanto seu carro vai anda :) </p>
+
+    
+        <label for="dinheiro">SEUS DINHEIROS</label>
+        <input type="number" id="dinheiro">
+        <button id="vai">Calcular</button>
+      <p id="resultl"> </p>
+
+    <p id="result"></p>
+    <p>2 O índice de massa corpórea (IMC) é o cálculo que demonstra se o indivíduo está ou não em seu peso ideal. Esse cálculo é importante para avaliar os riscos de obesidade e encontrar seu peso ideal. Segundo o modelo, pessoas com IMC </p>
+                <table>
+                    <tr>
+                        <th>Intervalos</th>
+                        <th>Interpretação</th>
+                    </tr>
+                    <tr>
+                        <td>abaixo de 18.5</td>
+                        <td>abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>entre 18.5 e 24.9</td>
+                        <td>com peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>entre 25.0 e 29.9</td>
+                        <td>levemente acima do peso</td>
+                    </tr>
+                    <tr>
+                        <td>entre 30.0 e 34.9</td>
+                        <td>Obesidade grau I</td>
+                    </tr>
+                    <tr>
+                        <td>entre 35.0 e 39.9</td>
+                        <td>Obesidade grau II (severa)</td>
+                    </tr>
+                    <tr>
+                        <td>acima de 40</td>
+                        <td>Obesidade grau III (mórbida)</td>
+                    </tr>
+                </table>
+                <p>
+                    Implemente a calculadora de IMC abaixo
+                </p>
+                <p>IMC = peso/(altura ^ 2)</p>
+                <fieldset>
+                    <legend>Calculadora de IMC</legend>
+                    <label>Informe o peso (KG)</label>
+                    <input id="q02-peso" type="number" placeholder="999.99">
+                    <label>Informe a altura (m)</label>
+                    <input id="q02-altura" type="number" placeholder="9.99">
+                    <button id="q02-executar">Calcular</button>
+                    <ul id="q02-result">
+                         <li>
+                <h5>3 Cálculo de probabilidades</h5>
+                <p>A probabilidade de dar um valor em um dado é 1/6 (uma em 6). Faça um script em JavaScript que simule 1 milhão de lançamentos de dados e mostre a frequência que deu para cada número.
+                </p>
+                <p>
+                Ao apertar o botão "Simular", seu programa deverá realizar 1 milhão de lançamentos aleatórios e contabilizar a frequência para cada face do dado. 
+                </p>
+                <fieldset>
+                    <legend>Simulador</legend>
+                    <button id="sorteeio">Simular</button>
+                    <p>Resposta:</p>
+                    <table>
+                        <tr>
+                            <th>Face</th>
+                            <th>Ocorrências</th>
+                            <th>Frequência</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="face-ocorr-1"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                            <td id="face-freq-1"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="face-ocorr-2"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                            <td id="face-freq-2"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="face-ocorr-3"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                            <td id="face-freq-3"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="face-ocorr-4"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                            <td id="face-freq-4"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="face-ocorr-5"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                            <td id="face-freq-5"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td id="face-ocorr-6"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                            <td id="face-freq-6"><!-- substitua o valor exemplo pela sua resposta aqui --></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </li>
+                         <h5>4 Inversor de nomes</h5>
+                <p>Faça um programa que peça ao usuário para digitar vários nomes. Ao mandar executar, seu programa deve exibir os nomes digitados invertidos (da última letra para a primeira).
+                </p>
+                <fieldset>
+                    <legend>Nomes</legend>
+                    <label>Insira um nome</label>
+                    <input id="q04-nome" type="text" placeholder="Digite um nome">
+                    <button id="q04-add">Adicionar nome</button>
+                    <h6>Lista de Nomes Digitados</h6>
+                    <p id="q04-nomes">
+                        
+                        <!--<li>Insira os nomes digitados nessa lista</li> -->
+                    </p>
+                    <ul id="ListaNomes">
+
+                    </ul>
+                    <button id="q04-executar">Inverter</button>
+                    <h6>Lista de Nomes Invertidos</h6>
+                    <ul id="ListaNomesI">
+
+                    </ul>
+                </fieldset>
+                <h5>5 Palíndromo</h5>
+                <p>Faça um programa que verifique se uma palavra digitada é um palíndromo. 
+                </p>
+                <p><em>Um palíndromo é uma palavra que quando invertida tem a mesma escrita: ARARA, OVO, ANA...</em>
+                </p>
+                <fieldset>
+                    <legend>Palindromista</legend>
+                    <label>Digite uma palavra</label>
+                    <input id="palavra5" type="text" placeholder="Digite uma palavra">
+                    <button id="buto5">Testa Palíndromo</button>
+                    <p id="result5"></p>
+                </fieldset>
+    <script>
+        let butao= document.getElementById("vai")
+        butao.onclick= calculo => {
+        const km= 20
+        let mango =document.getElementById("dinheiro")
+        let money= mango.value
+        let litros= money/7
+        
+        if(litros>=1){
+           let resultado=km*litros
+           let rlit= document.getElementById("resultl")
+           rlit.innerHTML=litros + " litros podem ser comprado"
+           resulta= document.getElementById("result")
+           resulta.innerHTML=resultado + " kms podem ser andandos com essa quantidade"
+           
+        }
+    }    
+        let botAo= document.getElementById("q02-executar")
+        botAo.onclick = calculoIMC =>{
+        let pEso = document.getElementById("q02-peso")
+        let peso= pEso.value
+        let altUra = document.getElementById("q02-altura")
+        let altura= altUra.value
+        let resultado2= peso/altura**2
+        let resultaa= document.getElementById("q02-result")
+        resultaa.innerHTML=resultado2}
+
+
+
+
+
+        let btao= document.getElementById("q04-add")
+        btao.onclick = adcionar =>{
+
+        let inputNome = document.getElementById("q04-nome")
+        let nome=inputNome.value
+
+        let saidan= document.getElementById("q04-nomes")
+        
+        let ListaNomes= document.getElementById("ListaNomes")
+            let novoNome= document.createElement("li")
+            let nomes= []
+            novoNome.textContent= nome 
+            ListaNomes.appendChild(novoNome)
+            nomes.push(nome);
+            inputNome.value= ""
+            let batao= document.getElementById("q04-executar")
+            batao.onclick = inverterpalavra =>{
+                for(let i= 0; i < nomes.length; i++) {
+
+                    nomes[i]=nomes[i].split("").reverse().join("")
+
+                    let ListaNomesI= document.getElementById("ListaNomesI")
+                    let NomesI=document.createElement("li")
+                    NomesI.textContent= nomes[i]
+                    ListaNomesI.appendChild(NomesI)
+                }
+
+
+
+
+            }
+ }
+let palavrada5 = document.getElementById("palavra5")
+            let buttns = document.getElementById("buto5")
+            buttns.onclick = palindromo =>{
+                let palavrad5 =palavrada5.value
+                palavras5=[]
+                palavras5[0]=palavrad5
+                palavras5[0]=palavras5[0].split("").reverse().join("")
+                if(palavrad5==palavras5[0]){
+                    let resultado5= document.getElementById("result5")
+                    resultado5.textContent= "sim é um palidromo"
+                }
+                if(palavrad5!==palavras5[0]){
+                    let resultado5= document.getElementById("result5")
+                    resultado5.textContent= "não é um palidromo"
+                }
+            
+}
+let SORTEIA =document.getElementById("sorteeio")
+SORTEIA.onclick= DADOS =>{
+
+function lancadorDados() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+let Dado =[0,0,0,0,0,0]
+for(let ii=0;ii<1000000;ii++){
+let faces = lancadorDados()
+
+Dado[faces - 1]++
+}
+
+    let quantidade=Dado[0]
+    let porcentagem= quantidade/1000000
+    let telap=document.getElementById("face-freq-1")
+    telap.textContent=porcentagem
+    let telaq= document.getElementById("face-ocorr-1")
+    telaq.textContent= quantidade
+     quantidade=Dado[1]
+     porcentagem= quantidade/1000000
+     telap=document.getElementById("face-freq-2")
+    telap.textContent=porcentagem
+     telaq= document.getElementById("face-ocorr-2")
+    telaq.textContent= quantidade
+     quantidade=Dado[2]
+     porcentagem= quantidade/1000000
+     telap=document.getElementById("face-freq-3")
+    telap.textContent=porcentagem
+     telaq= document.getElementById("face-ocorr-3")
+    telaq.textContent= quantidade
+     quantidade=Dado[3]
+     porcentagem= quantidade/1000000
+     telap=document.getElementById("face-freq-4")
+    telap.textContent=porcentagem
+     telaq= document.getElementById("face-ocorr-4")
+    telaq.textContent= quantidade
+     quantidade=Dado[4]
+     porcentagem= quantidade/1000000
+     telap=document.getElementById("face-freq-5")
+    telap.textContent=porcentagem
+     telaq= document.getElementById("face-ocorr-5")
+    telaq.textContent= quantidade
+     quantidade=Dado[5]
+     porcentagem= quantidade/1000000
+     telap=document.getElementById("face-freq-6")
+    telap.textContent=porcentagem
+     telaq= document.getElementById("face-ocorr-6")
+    telaq.textContent= quantidade
+
+    
+}
+
+
+   
+        
+        
+
+        
+
+
+    
+        
+    </script>
+    
+</body>
+</html>
