@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        #tabuleiro {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            margin-top: 30px;
+        }
+        .celula {
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div id="tabuleiro"></div>
+    <script>
+        let tabuleiro = document.getElementById('tabuleiro')
+        let jogo = ['', '', '', '', '', '', '', '', '']
+        let jogador = 'X'
+        for (let i = 0; i < 9; i++) {
+            let celula = document.createElement('div')
+            celula.className = 'celula'
+            celula.dataset.index = i
+            celula.addEventListener('click', clique)
+            tabuleiro.appendChild(celula)
+        }
+        function clique() {
+            let i = this.dataset.index
+            if (jogo[i] == '') {
+                jogo[i] = jogador
+                this.innerText = jogador
+                if (vitoria()) {
+                    alert(jogador + ' ganhou')
+                    location.reload()
+                }
+                jogador = 'O'
+                jogadaComputador()
+            }
+        }
+        function jogadaComputador() {
+            let vazio = []
+            for (let i = 0; i < 9; i++) {
+                if (jogo[i] == '') vazio.push(i)
+            }
+            if (vazio.length == 0) {
+                alert('Empate')
+                location.reload()
+                return
+            }
+            let aleatorio = vazio[Math.floor(Math.random() * vazio.length)]
+            jogo[aleatorio] = jogador
+            tabuleiro.children[aleatorio].innerText = jogador
+            if (vitoria()) {
+                alert(jogador + ' ganhou')
+                location.reload()
+            }
+            jogador = 'X'
+        }
+        function vitoria() {
+            let v = [
+                [0,1,2],[3,4,5],[6,7,8],
+                [0,3,6],[1,4,7],[2,5,8],
+                [0,4,8],[2,4,6]
+            ]
+            for (let i = 0; i < v.length; i++) {
+                let [a,b,c] = v[i]
+                if (jogo[a] && jogo[a] == jogo[b] && jogo[a] == jogo[c]) return true
+            }
+            return false
+        }
+    </script>
+</body>
+</html>
+6
