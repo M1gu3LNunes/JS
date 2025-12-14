@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca CEFET-RJ</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Biblioteca CEFET-RJ — Nova Friburgo</h1>
+      <div id="saidaLogin">
+<a class="btn-header" href="./login/login.php">Sair desse usuário</a>
+
+</div>
+
+    </header>
+
+    <main>
+      <section class="gerenciamento">
+        <h2>Gerenciamento</h2>
+        <div class="row">
+          <input type="text" id="busca" placeholder="Buscar por título, autor ou gênero">
+          <button id="consultarLivros" onclick="consultarLivros()">Consultar</button>
+          <button id="listarLivros" onclick="listarTodos()">Listar Todos</button>
+        </div>
+      </section>
+
+      <section id="areaBusca" class="area-busca">
+        <h3>Resultado da Busca</h3>
+        <div id="saidaBusca" class="resultado"></div>
+      </section>
+
+      <section class="acoes-laterais">
+        <div class="card acao">
+          <h3>Registrar Retirada</h3>
+          <div class="row">
+            <input type="text" id="Retirada" placeholder="Título do livro (exato ou parcial)">
+            <button id="registrarRetirada">Registrar</button>
+          </div>
+        </div>
+
+        <div class="card acao">
+          <h3>Cadastrar / Alterar Livro</h3>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="novoTitulo">Título</label>
+              <input id="novoTitulo" type="text" placeholder="Título">
+            </div>
+
+            <div class="form-group">
+              <label for="novoAutor">Autor</label>
+              <input id="novoAutor" type="text" placeholder="Autor">
+            </div>
+
+            <div class="form-group">
+              <label for="novoIssn">ISSN</label>
+              <input id="novoIssn" type="text" placeholder="ISSN">
+            </div>
+
+            <div class="form-group">
+              <label for="novoEditora">Editora</label>
+              <input id="novoEditora" type="text" placeholder="Editora">
+            </div>
+
+            <div class="form-group">
+              <label for="novoAno">Ano</label>
+              <input id="novoAno" type="number" placeholder="Ano">
+            </div>
+
+            <div class="form-group">
+              <label for="novoGenero">Gênero</label>
+              <input id="novoGenero" type="text" placeholder="Gênero">
+            </div>
+
+            <div class="form-group">
+              <label for="novoLocal">Localização</label>
+              <input id="novoLocal" type="text" placeholder="Localização (ex: 3-A)">
+            </div>
+
+            <div class="form-group">
+              <label for="novoDisponibilidade">Disponibilidade</label>
+              <select id="novoDisponibilidade">
+                <option value="">(manter atual)</option>
+                <option value="Disponível">Disponível</option>
+                <option value="Indisponível">Indisponível</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row actions">
+            <button id="cadastrarLivro">Cadastrar</button>
+            <button id="alterarLivro" onclick="AlterarExemplar()">Alterar por título</button>
+          </div>
+
+          <p class="hint">Alterar por título: deixe o campo <strong>Título</strong> preenchido com o nome (ou parte) do livro e clique "Alterar por título".</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div id="saida"></div>
+    </footer>
+    <div class="card acao">
+  <h3>Deletar Livro</h3>
+  <div class="row">
+    <input type="text" id="deletarTitulo" placeholder="Título do livro">
+    <button id="btnDeletarLivro" onclick="deletarExemplar()">Deletar</button>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>

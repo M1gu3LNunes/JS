@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 70%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bbb;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.acoes {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #3575e2;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #245ec9;
+}
+
+.resultado {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-height: 40px;
+}
+
+#saidaCadastro, #saidaBusca, #saida {
+    margin-top: 15px;
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-height: 30px;
+}
